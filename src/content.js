@@ -75,7 +75,7 @@ const getCompletion = async (message) => {
   const context = getWebpageContext(message); // pass the element or message here
   console.log("Context in getCompletion:", context);
 
-  const response = await fetch("http://localhost:3000/api/chat", {
+  const response = await fetch("https://autotab-backend.vercel.app/api/chat", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
